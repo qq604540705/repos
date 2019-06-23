@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--获取到AJAX请求获得的数据-->
+    <script>
+        $.ajax({
+            url:"/regionServlet",
+            data:"get",
+            success:function (data) {
+                $(data).each(function (index,element) {
+                    $("#select").append("<option>"+element.name+"</option>")
+                })
+            }
+        })
+    </script>
+</head>
+<body>
+    <select id="select">
+        <option>请选择地区</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC_01_Deam" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC_01_exam" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC_02_exception" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MybatisDemo1/pom.xml" />
+        <option value="D:/黑马学习/JavaSSM框架/day29-Mybatis一/作业/mybatis_01_exam/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_02_dny/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_03_exam/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_03_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_01/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_01_exam/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_02_exam/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_03_AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_03_tx2_AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_04_transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_03_Exam/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_04_Exam/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC_01_Deam/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC_01_exam/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC_02_exception/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="9.0" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

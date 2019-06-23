@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.CategoryDao">
+    <resultMap id="category_account" type="Category">
+        <!--分类信息-->
+        <id column="cgid" property="cid"></id>
+        <result column="cname" property="cname"></result>
+        <!--路线信息-->
+        <collection property="route" javaType="java.util.List" ofType="route">
+            <id column="rid" property="rid"></id>
+            <result column="rname" property="rname"></result>
+            <result column="price" property="price"></result>
+            <result column="routeIntroduce" property="routeIntroduce"></result>
+            <result column="rflag" property="rflag"></result>
+            <result column="rdate" property="rdate"></result>
+            <result column="isThemeTour" property="isThemeTour"></result>
+            <result column="count" property="count"></result>
+            <result column="cid" property="cid"></result>
+            <result column="rimage" property="rimage"></result>
+            <result column="sid" property="sid"></result>
+            <result column="sourceId" property="sourceId"></result>
+        </collection>
+    </resultMap>
+    <resultMap id="category_route" type="category">
+        <id column="cgid" property="cid"></id>
+        <result column="cname" property="cname"></result>
+        <collection property="route" ofType="route">
+        </collection>
+    </resultMap>
+
+    <select id="findAllWithRoutes" resultMap="category_account">
+    select c.cid cgid,c.cname,r.* FROM tab_category c INNER JOIN  tab_route r on c.cid = r.cid
+    </select>
+
+    <!--
+     /**
+     * 根据分类id查询分类,分类中包含线路信息
+     * @return
+     */
+    Category findByCidWithRoutes(Integer cid);
+    -->
+    <!--<resultMap id="category_route_id" type="Category" autoMapping="true">-->
+        <!--<id property="cid" column="cid"></id>-->
+        <!--<collection property="route" javaType="list" ofType="Route" autoMapping="true">-->
+            <!--<id property="rid" column="rid"></id>-->
+        <!--</collection>-->
+    <!--</resultMap>-->
+    <!--<select id="findByCidWithRoutes" resultMap="category_route_id" parameterType="int">-->
+        <!--select * from tab_category join tab_route on tab_category.cid = tab_route.cid WHERE tab_category.cid=#{cid}-->
+    <!--</select>-->
+    <resultMap id="category_route_id" type="Category" autoMapping="true">
+        <id property="cid" column="cid"></id>
+        <collection property="route" javaType="list" ofType="Route" autoMapping="true">
+            <id property="rid" column="rid"></id>
+        </collection>
+    </resultMap>
+    <select id="findByCidWithRoutes" resultMap="category_route_id" parameterType="int">
+        select * from tab_category join tab_route on tab_category.cid = tab_route.cid WHERE tab_category.cid = #{cid}
+    </select>
+</mapper>

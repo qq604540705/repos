@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jquery案例之抽奖</title>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        //2.开始案例,点击后触发,小图片的轮换
+        /**1.给开始和结束按钮增加点击事件
+         * 2.开始案例,点击后触发,小图片的轮换
+         * 3.点击结束按钮后停止图片轮换,并获取到停止时的图片角标
+         * 4.将图片显示到大相框中
+         */
+        $(function () {
+            var number;
+            var count;
+            var interval;
+            $("#stopID").prop("disabled",true);
+            $("#startID").click(function () {
+                //给开始和结束按钮增加点击事件
+                interval = setInterval(start, 20);
+            })
+            $("#stopID").click(function () {
+                //结束图片轮播
+                clearInterval(interval);
+                //将图片显示到大框内
+                $("#img2ID").prop("src",number).hide();
+                $("#img2ID").show("slow");
+                $("#startID").prop("disabled",false);
+                $("#stopID").prop("disabled",true);
+            })
+            //图片轮播
+            function start() {
+                count=Math.floor(Math.random()*7 );
+                number="../img/man0"+count+".jpg";
+                $("#img1ID").prop("src", number)
+                //点击开始按钮后,将结束按钮禁用掉
+                $("#startID").prop("disabled",true);
+                $("#stopID").prop("disabled",false);
+            }
+
+        })
+    </script>
+</head>
+<body>
+
+<!-- 小像框 -->
+<div style="border-style:dotted;width:160px;height:100px">
+    <img id="img1ID" src="../img/man00.jpg" style="width:160px;height:100px"/>
+</div>
+
+<!-- 大像框 -->
+<div
+        style="border-style:double;width:800px;height:500px;position:absolute;left:500px;top:10px">
+    <img id="img2ID" src="../img/man00.jpg" width="800px" height="500px"/>
+</div>
+
+<!-- 开始按钮 -->
+<input
+        id="startID"
+        type="button"
+        value="点击开始"
+        style="width:150px;height:150px;font-size:22px">
+
+<!-- 停止按钮 -->
+<input
+        id="stopID"
+        type="button"
+        value="点击停止"
+        style=" width:150px;height:150px;font-size:22px">
+
+
+<script language='javascript' type='text/javascript'>
+    //准备一个一维数组，装用户的像片路径
+    var imgs = [
+        "../img/man00.jpg",
+        "../img/man01.jpg",
+        "../img/man02.jpg",
+        "../img/man03.jpg",
+        "../img/man04.jpg",
+        "../img/man05.jpg",
+        "../img/man06.jpg"
+    ];
+
+</script>
+</body>
+</html>

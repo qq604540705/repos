@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/9-4-16(base++)/9-4-16(base++).iml" filepath="$PROJECT_DIR$/9-4-16(base++)/9-4-16(base++).iml" />
+      <module fileurl="file://$PROJECT_DIR$/9-4-20(web预习)_html5标签/9-4-20(web预习)_html5标签.iml" filepath="$PROJECT_DIR$/9-4-20(web预习)_html5标签/9-4-20(web预习)_html5标签.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9-4-22_JDBC/../..//9-Java-Web/9-4-20_JDBC/9-4-20_JDBC.iml" filepath="$PROJECT_DIR$/9-4-22_JDBC/../..//9-Java-Web/9-4-20_JDBC/9-4-20_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9-4-23_JDBC_Template/9-4-23_JDBC_Template.iml" filepath="$PROJECT_DIR$/9-4-23_JDBC_Template/9-4-23_JDBC_Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../9-Java-Web/untitled/untitled.iml" filepath="$PROJECT_DIR$/../9-Java-Web/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>

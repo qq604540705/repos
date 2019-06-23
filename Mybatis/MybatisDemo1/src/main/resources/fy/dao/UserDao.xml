@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fy.dao.UserDao">
+    <select id="findAll" resultType="fy.domain.User">
+    SELECT * FROM user
+    </select>
+    <select id="findUserById" resultType="fy.domain.User" parameterType="java.lang.Integer">
+    SELECT * from user where id=#{id}
+    </select>
+    <select id="findUserByAddress" resultType="fy.domain.User" parameterType="java.lang.String">
+    SELECT * FROM user where address like #{address}
+    </select>
+
+    <insert id="addUser" parameterType="fy.domain.User">
+      <selectKey keyColumn="id" keyProperty="id" resultType="int">
+          SELECT last_insert_id();
+      </selectKey>
+    insert into user values (null,#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <delete id="delUserById" parameterType="java.lang.Integer" >
+        DELETE FROM user where id=#{id}
+    </delete>
+
+    <update id="updateById" parameterType="fy.domain.User">
+        UPDATE user set username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
+    </update>
+
+</mapper>

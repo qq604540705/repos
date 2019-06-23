@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            var elementById = document.getElementById("huanTu");
+            elementById.onclick=function () {
+                //alert(1111)
+                var data = new Date();
+                var time = data.getTime();
+                //alert(time)
+                elementById.src="/checkCodeServlet?"+time;
+            }
+        }
+    </script>
+</head>
+<body>
+<img id="huanTu" src="/checkCodeServlet">
+<a href="/login.html">看不清楚换一张</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //鼠标移入
+            $("#1").mouseover(function () {
+                $("#img").prop("src","man01.jpg")
+            })
+            //鼠标移出
+            $("#1").mouseout(function () {
+                $("#img").remove();
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="1" value="图片">
+    <!-- 大像框 -->
+    <div id="d" style="border-style:double;width:800px;height:500px;position:absolute;left:500px;top:10px">
+        <img id="img"  width="800px" height="500px"/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--<bean id="UserDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>-->
+    <!--<bean id="UserService" class="com.itheima.servcie.impl.UserServiceImpl"></bean>-->
+    <bean id="UserServiceFactory" class="com.itheima.servcie.UserServiceFactory"></bean>
+    <bean id="UserService" factory-bean="UserServiceFactory" factory-method="getBean"></bean>
+    <bean id="UserDao" class="com.itheima.dao.UserDaoStaticFactory" factory-method="getUserDao"></bean>
+</beans>

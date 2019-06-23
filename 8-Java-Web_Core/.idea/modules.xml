@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/5-14-Cookie&amp;Session_Demo/5-14-Cookie&amp;Session_Demo.iml" filepath="$PROJECT_DIR$/5-14-Cookie&amp;Session_Demo/5-14-Cookie&amp;Session_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-15_UresDemo/5-15_UresDemo.iml" filepath="$PROJECT_DIR$/5-15_UresDemo/5-15_UresDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-16_Filter/5-16_Filter.iml" filepath="$PROJECT_DIR$/5-16_Filter/5-16_Filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-19_JQuery_Demo/5-19_JQuery_Demo.iml" filepath="$PROJECT_DIR$/5-19_JQuery_Demo/5-19_JQuery_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-20_Ajax/5-20_Ajax.iml" filepath="$PROJECT_DIR$/5-20_Ajax/5-20_Ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-20_JQureyDemo/5-20_JQureyDemo.iml" filepath="$PROJECT_DIR$/5-20_JQureyDemo/5-20_JQureyDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-22_Redis_RegionDemo/5-22_Redis_RegionDemo.iml" filepath="$PROJECT_DIR$/5-22_Redis_RegionDemo/5-22_Redis_RegionDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-22_redisDemo/5-22_redisDemo.iml" filepath="$PROJECT_DIR$/5-22_redisDemo/5-22_redisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-6_Servlet_Bases/5-6_Servlet_Bases.iml" filepath="$PROJECT_DIR$/5-6_Servlet_Bases/5-6_Servlet_Bases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-6_Servlet_Bases+/5-6_Servlet_Bases+.iml" filepath="$PROJECT_DIR$/5-6_Servlet_Bases+/5-6_Servlet_Bases+.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-7-regist2/5-7-regist2.iml" filepath="$PROJECT_DIR$/5-7-regist2/5-7-regist2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-7_Servet-HTTP-Request/5-7_Servet-HTTP-Request.iml" filepath="$PROJECT_DIR$/5-7_Servet-HTTP-Request/5-7_Servet-HTTP-Request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-7_Servet2/5-7_Servet2.iml" filepath="$PROJECT_DIR$/5-7_Servet2/5-7_Servet2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-7_regist/5-7_regist.iml" filepath="$PROJECT_DIR$/5-7_regist/5-7_regist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-9_JDBC/5-9_JDBC.iml" filepath="$PROJECT_DIR$/5-9_JDBC/5-9_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-9_Response/5-9_Response.iml" filepath="$PROJECT_DIR$/5-9_Response/5-9_Response.iml" />
+    </modules>
+  </component>
+</project>
